@@ -8,7 +8,7 @@
     <% for (var i = 0 ; i < numberOfItems; ++i) with(items[i]) { %>
         <li class="retailrocket-item" style="width:<%=itemImageWidth%>px;">
             <a class="retailrocket-item-info" href="<%=Url%>" onmousedown=\'retailrocket.widget.click(<%=ItemId%>,"<%=suggesterId%>","<%=algorithm%>") \'>
-                <div class="retailrocket-item-image"> 
+                <div class="retailrocket-item-image">
                    <img onerror="retailrocket.widget.hideProduct(this)" src="//cdnimg.retailrocket.net/api/1.0/partner/<%=partnerId%>/item/<%=ItemId%>/picture/?format=png&width=<%=itemImageWidth%>&height=<%=itemImageHeight%>&scale=both" style="width:<%=itemImageWidth%>px;height:<%=itemImageHeight%>px"></div>
                 <div class="retailrocket-item-brand">
                     <%=Vendor %>
@@ -31,3 +31,4 @@
         </li>
    <% } %>
 </ul>
+1
